@@ -56,7 +56,7 @@ if [ ! -f $BUILD_DIR/.gems/bin/jekyll ]; then
     gem install listen --no-document | indent
     gem install liquid --no-document | indent
     gem install jekyll redcarpet sass --no-document | indent
-    gem install therubyracer --no-document | indent
+    gem install mini_racer --no-document | indent
 
     if [ -f $BUILD_DIR/Gemfile ]; then
       gem install bundler --no-document | indent
