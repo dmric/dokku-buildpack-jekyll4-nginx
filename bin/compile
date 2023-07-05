@@ -19,15 +19,15 @@ function indent() {
   esac
 }
 
-if [[ `ruby -v` != "ruby 3.2"* ]]; then
-  echo "-----> Installing Ruby 3.2.0"
+if [[ `ruby -v` != "ruby 3.2.2"* ]]; then
+  echo "-----> Installing Ruby 3.2.2"
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   git clone https://github.com/garnieretienne/rvm-download.git ~/.rbenv/plugins/rvm-download
   export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-  rbenv download 3.2.0
+  rbenv download 3.2.2
   rbenv rehash
-  rbenv local 3.2.0
-  rbenv global 3.2.0
+  rbenv local 3.2.2
+  rbenv global 3.2.2
 else
   echo "-----> Using `ruby -v`"
 fi
